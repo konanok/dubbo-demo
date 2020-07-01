@@ -12,10 +12,10 @@
 
 ### Steps to reproduce this issue
 
-[demo-github]()
+[demo](https://github.com/konanok/dubbo-demo)
 
-1. start [dubbo-provider-demo]() with no tag
-2. start [dubbo-consumer-demo]() with [DynamicTagRouter](), and it will set the consumer tag with "A"
+1. start [dubbo-provider-demo](https://github.com/konanok/dubbo-demo/tree/master/dubbo-provider-demo) with no tag
+2. start [dubbo-consumer-demo](https://github.com/konanok/dubbo-demo/tree/master/dubbo-consumer-demo) with [DynamicTagRouter](https://github.com/konanok/dubbo-demo/blob/master/dubbo-spi/src/main/java/org/konanok/demo/dubbo/spi/router/DynamicTagRouter.java), and it will set the consumer tag with "A"
 ```java
 RpcContext.getContext().setAttachment(CommonConstants.TAG_KEY, tag);
 ```
@@ -135,7 +135,7 @@ public <T> List<Invoker<T>> route(List<Invoker<T>> invokers, URL url, Invocation
 }
 ```
 
-[TagRouter document](https://dubbo.apache.org/zh-cn/docs/user/demos/routing-rule.html) tell me to set consumer tag by **RpcContext**... 😓😓😓
+[TagRouter Document](https://dubbo.apache.org/zh-cn/docs/user/demos/routing-rule.html) tell me to set consumer tag by **RpcContext**... 😓😓😓
 
 > RpcContext.getContext().setAttachment(Constants.REQUEST_TAG_KEY,"tag1");
 
