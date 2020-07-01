@@ -1,4 +1,4 @@
-# TagRouter filter all providers which has dynamic tag
+# Set consumer tag by RpcContext doesn't work
 
 - [x] I have searched the [issues](https://github.com/apache/dubbo/issues) of this repository and believe that this is not a duplicate.
 - [x] I have checked the [FAQ](https://github.com/apache/dubbo/blob/master/FAQ.md) of this repository and believe that this is not a duplicate.
